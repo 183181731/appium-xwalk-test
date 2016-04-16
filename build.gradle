@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.simon.appiumworkspace'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "https://oss.sonatype.org/content/groups/public" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'junit', name: 'junit', version:'4.12'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'LATEST'
+    compile group: 'io.appium', name: 'java-client', version:'3.3.0'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.2.4'
+    compile group: 'com.sikulix', name: 'sikulixapi', version:'1.1.0'
+    testCompile group: 'com.googlecode.json-simple', name: 'json-simple', version:'1.1'
+    testCompile group: 'commons-lang', name: 'commons-lang', version:'2.6'
+}
